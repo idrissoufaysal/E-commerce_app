@@ -13,5 +13,11 @@ export interface Product {
 
     };
   }
+
+  export interface CardStore{
+    card:Product[],
+    addToCard:(item:Product)=>void,
+    removeToCard:(item:Product,id:number)=>void
+  }
  
   
